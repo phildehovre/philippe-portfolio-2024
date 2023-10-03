@@ -9,7 +9,7 @@ export const details = [
       "Figma",
       "axios",
     ],
-    img: "src/assets/myfy.jpg",
+    img: "src/assets/images/myfy.jpg",
     color: "red",
     description:
       "A stock tracking app that allows users to create watchlists and set goals.",
@@ -18,7 +18,7 @@ export const details = [
   },
   {
     name: "Bedmar Music",
-    img: "/src/assets/bedmar.jpeg",
+    img: "/src/assets/images/bedmar.jpeg",
     color: "green",
     stack: ["React", "CSS", "HTML", "Figma", "Email.js"],
     description:
@@ -28,7 +28,7 @@ export const details = [
   },
   {
     name: "Planoramic",
-    img: "/src/assets/planoramic.jpg",
+    img: "/src/assets/images/planoramic.jpg",
     stack: [
       "React",
       "Supabase",
@@ -44,7 +44,7 @@ export const details = [
   },
   {
     name: "Goodles",
-    img: "/src/assets/goodles.jpg",
+    img: "/src/assets/images/goodles.jpg",
     color: "yellow",
     stack: ["React", "Supabase", "React-Query", "Google Calendar API"],
     description:
@@ -54,7 +54,7 @@ export const details = [
   },
   {
     name: "Sean Jackson Band",
-    img: "/src/assets/seanjacksonband.jpg",
+    img: "/src/assets/images/seanjacksonband.jpg",
     color: "yellow",
     stack: ["React", "Redux", "Node", "Express", "PostgreSQL"],
     description:
