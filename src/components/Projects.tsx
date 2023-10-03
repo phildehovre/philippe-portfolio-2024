@@ -74,28 +74,31 @@ function Projects() {
   const renderDesktopContentSections = () => {
     return details.map((detail) => {
       return (
-        <div className="desktopContentSection" key={detail.name}>
-          <h1>{detail.name}</h1>
-          <p>{detail.description}</p>
-          <span className="buttons-ctn">
-            <a
-              className="detail-link"
-              href={detail.url}
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FontAwesomeIcon icon={faEarth} size="lg" />
-            </a>
-            <a
-              className="detail-link"
-              href={detail.github}
-              target="_blank"
-              rel="noreferrer"
-            >
-              {`< / >`}
-            </a>
-          </span>
-        </div>
+        <React.Fragment key={detail.name}>
+          {/* {index === Math.round(details.length / 2) && <div ref={ref}></div>} */}
+          <div className="desktopContentSection" key={detail.name}>
+            <h1>{detail.name}</h1>
+            <p>{detail.description}</p>
+            <span className="buttons-ctn">
+              <a
+                className="detail-link"
+                href={detail.url}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FontAwesomeIcon icon={faEarth} size="lg" />
+              </a>
+              <a
+                className="detail-link"
+                href={detail.github}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {`< / >`}
+              </a>
+            </span>
+          </div>
+        </React.Fragment>
       );
     });
   };
@@ -134,6 +137,7 @@ function Projects() {
 
   return (
     <>
+      <div ref={ref}></div>
       <div className="projects-section">
         <div className="gallery">
           <div className="left">
@@ -142,7 +146,6 @@ function Projects() {
             </div>
           </div>
 
-          <div ref={ref}></div>
           <div className="right">
             {/* <!-- mobile content --> */}
             <div className="mobileContent">
