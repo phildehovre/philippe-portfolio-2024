@@ -1,11 +1,11 @@
+@import '../_variables.scss';
 
 
-
-.gallery h1 {
+.gallery > h1 {
 	font-size:clamp(2em, 4vw, 6em);
 }
 
-.gallery p {
+.gallery > p {
 	font-size:clamp(1.4em, 2.5vw, 3.5em);
 	line-height:1.4;
 }
@@ -61,22 +61,6 @@
 
 
 
-.red {
-	background: crimson;
-}
-
-.green {
-	background:MediumSeaGreen;
-}
-
-.blue {
-	background:dodgerblue;
-}
-
-.pink{
-	background:deepPink;
-}
-
 
 /* small screen / mobile layout */
 .mobileContent {
@@ -91,6 +75,19 @@
 	border-radius:6vw;
 }
 
+.detail-overlay {
+	transform: translateY(101%);
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.966);
+	transition: 250ms ease-in-out all;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%
+	
+}
 
 
 
@@ -112,8 +109,37 @@
 		display:none;
 	}
 	
-	.mobileContent {
+    .mobileContent {
 		display:block;
+
+        .mobilePhoto {
+            height: 0;
+        }
+
+		.mobileCard {
+			margin: 2.5em 0;
+			background-color: $accent-o2;
+			padding: 1.5em 1em;
+			border-radius: 16px;
+			min-height: 300px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+	}
+
+
+	.buttons-ctn {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		
+		.detail-link {
+			background-color: $accent;
+			width: 50%;
+	padding: .5em 1em;
+	text-align: center;
+		}
 	}
 	
 

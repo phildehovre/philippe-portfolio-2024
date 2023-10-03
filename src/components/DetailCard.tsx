@@ -12,7 +12,7 @@ function DetailCard(props: { index: number; detail: DetailCardProps }) {
   const [isHovered, setIsHovered] = React.useState<boolean>(false);
   const [showDetail, setShowDetail] = React.useState<number | null>(null);
   const stackItemRef = React.useRef(null);
-  const { index, detail } = props;
+  const { index } = props;
   const { img, stack } = props.detail;
 
   useEffect(() => {
@@ -22,7 +22,7 @@ function DetailCard(props: { index: number; detail: DetailCardProps }) {
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
       if (isHovered) {
-        const tl = gsap
+        gsap
           .timeline()
           .set(`.stack-item-${index}`, { opacity: 0, y: "101%" })
           .to(".detail-overlay", {

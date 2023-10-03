@@ -6,6 +6,7 @@ import { details } from "../lib/cases";
 import DetailCard from "./DetailCard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEarth } from "@fortawesome/free-solid-svg-icons";
+import React from "react";
 
 function Projects() {
   useLayoutEffect(() => {
@@ -36,7 +37,7 @@ function Projects() {
           start: "top top",
           end: "bottom bottom",
           pin: ".right",
-          markers: true,
+          // markers: true,
         });
 
         //create scrolltrigger for each details section
@@ -54,7 +55,7 @@ function Projects() {
             end: "top 50%",
             animation: animation,
             scrub: true,
-            markers: true,
+            // markers: true,
           });
         });
 
@@ -97,6 +98,38 @@ function Projects() {
     });
   };
 
+  const renderMobileContentSections = () => {
+    return details.map((detail) => {
+      return (
+        <React.Fragment key={detail.name}>
+          <div className="mobilePhoto"></div>
+          <span className="mobileCard">
+            <h1>{detail.name}</h1>
+            <p>{detail.description}</p>
+            <span className="buttons-ctn">
+              <a
+                className="detail-link"
+                href={detail.url}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FontAwesomeIcon icon={faEarth} size="lg" />
+              </a>
+              <a
+                className="detail-link"
+                href={detail.github}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {`< / >`}
+              </a>
+            </span>
+          </span>
+        </React.Fragment>
+      );
+    });
+  };
+
   return (
     // <div>Projects</div>
     <div className="projects-section">
@@ -108,7 +141,8 @@ function Projects() {
         <div className="right">
           {/* <!-- mobile content --> */}
           <div className="mobileContent">
-            <div className="mobilePhoto red"></div>
+            {renderMobileContentSections()}
+            {/* <div className="mobilePhoto red"></div>
             <h1>Red</h1>
             <p>
               Red is a color often associated with strong emotions such as
@@ -147,14 +181,16 @@ function Projects() {
               psychology, blue is said to represent loyalty and trust, making it
               a popular choice for branding and marketing in the finance and
               technology industries.
-            </p>
+            </p> */}
           </div>
 
           {/* <!-- desktop content --> */}
 
           <div className="desktopPhotos">
             {details.map((detail, index) => {
-              return <DetailCard index={index} detail={detail} />;
+              return (
+                <DetailCard index={index} detail={detail} key={detail.name} />
+              );
             })}
           </div>
         </div>
