@@ -7,8 +7,10 @@ import DetailCard from "./DetailCard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEarth } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
+import { useSectionInView } from "../lib/useElementInViewport";
 
 function Projects() {
+  const { ref } = useSectionInView("Projects");
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
@@ -131,25 +133,28 @@ function Projects() {
   };
 
   return (
-    // <div>Projects</div>
-    <div className="projects-section">
-      <div className="gallery">
-        <div className="left">
-          <div className="desktopContent">{renderDesktopContentSections()}</div>
-        </div>
+    <>
+      <div className="projects-section">
+        <div className="gallery">
+          <div className="left">
+            <div className="desktopContent">
+              {renderDesktopContentSections()}
+            </div>
+          </div>
 
-        <div className="right">
-          {/* <!-- mobile content --> */}
-          <div className="mobileContent">
-            {renderMobileContentSections()}
-            {/* <div className="mobilePhoto red"></div>
+          <div ref={ref}></div>
+          <div className="right">
+            {/* <!-- mobile content --> */}
+            <div className="mobileContent">
+              {renderMobileContentSections()}
+              {/* <div className="mobilePhoto red"></div>
             <h1>Red</h1>
             <p>
-              Red is a color often associated with strong emotions such as
-              passion, love, and anger. It's a bold and attention-grabbing color
-              that can evoke feelings of excitement, warmth, and energy.
+            Red is a color often associated with strong emotions such as
+            passion, love, and anger. It's a bold and attention-grabbing color
+            that can evoke feelings of excitement, warmth, and energy.
             </p>
-
+            
             <div className="mobilePhoto green"></div>
             <h1>Green</h1>
             <p>
@@ -159,22 +164,22 @@ function Projects() {
               psychology, green is said to represent balance and stability,
               making it a popular choice for branding and marketing in the
               health and wellness industry.{" "}
-            </p>
-
-            <div className="mobilePhoto pink"></div>
-            <h1>Pink</h1>
-            <p>
+              </p>
+              
+              <div className="mobilePhoto pink"></div>
+              <h1>Pink</h1>
+              <p>
               Pink is a color that is often associated with femininity, romance,
               and sweetness. It is a softer and more delicate shade of red that
               can evoke feelings of warmth, love, and nurturing. In the world of
               branding and marketing, pink is often used to target a female
               audience or to promote products that are associated with beauty,
               love, or romance.
-            </p>
-
-            <div className="mobilePhoto blue"></div>
-            <h1>Blue</h1>
-            <p>
+              </p>
+              
+              <div className="mobilePhoto blue"></div>
+              <h1>Blue</h1>
+              <p>
               Blue is a color that is often associated with calmness, trust, and
               reliability. It is a peaceful and serene color that can evoke
               feelings of stability, security, and professionalism. In color
@@ -182,20 +187,21 @@ function Projects() {
               a popular choice for branding and marketing in the finance and
               technology industries.
             </p> */}
-          </div>
+            </div>
 
-          {/* <!-- desktop content --> */}
+            {/* <!-- desktop content --> */}
 
-          <div className="desktopPhotos">
-            {details.map((detail, index) => {
-              return (
-                <DetailCard index={index} detail={detail} key={detail.name} />
-              );
-            })}
+            <div className="desktopPhotos">
+              {details.map((detail, index) => {
+                return (
+                  <DetailCard index={index} detail={detail} key={detail.name} />
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

@@ -3,7 +3,6 @@ import Lenis from "@studio-freight/lenis";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Page from "./components/Page";
-import ActiveSectionContextProvider from "./context/activeElementContext";
 
 function App() {
   const lenis = new Lenis();
@@ -17,11 +16,9 @@ function App() {
 
   return (
     <>
-      <ActiveSectionContextProvider>
-        <Header />
-        <Page />
-        <Footer />
-      </ActiveSectionContextProvider>
+      <Header />
+      <Page />
+      <Footer />
     </>
   );
 }
