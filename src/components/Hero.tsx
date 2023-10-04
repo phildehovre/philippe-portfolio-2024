@@ -14,7 +14,7 @@ function Hero() {
         { y: "0%" },
         {
           opacity: 1,
-          y: "-89.5%",
+          y: "-91.75%",
           duration: 3,
           ease: "power4.out",
         }
@@ -42,7 +42,12 @@ function Hero() {
         <div className="greeting-wrapper">
           <div className="greeting">{renderWelcome()}</div>
         </div>
-        <div className="description">Web Developer</div>
+      </div>
+      <h1 className="my-name-is">I am Philippe</h1>
+      <div className="description">
+        I'm a <b>Front-end Developer</b> with <b>four years</b> of experience. I
+        focus on <b>React</b> (Next.js). I am also passionate about <b>UI/UX</b>{" "}
+        and elegant designs.
       </div>
     </div>
   );
