@@ -3,6 +3,7 @@ import Lenis from "@studio-freight/lenis";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Page from "./components/Page";
+import Backdrop from "./components/Backdrop";
 
 function App() {
   const lenis = new Lenis();
@@ -17,6 +18,7 @@ function App() {
   return (
     <>
       <Header />
+      <Backdrop />
       <Page />
       <Footer />
     </>

@@ -1,9 +1,12 @@
+@import '../variables.scss';
+
 .hero-section {
     min-height: 100svh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: -1;
 
 
     > * {
@@ -39,6 +42,7 @@
             .greeting {
                 width: 100%;
                 text-align: center;
+                font-size: 1.5em;
 
                 > h1 {
                     margin: 0;
@@ -48,6 +52,98 @@
                 
             }
 
+        }
+    }
+
+    .my-name-is {
+        padding: 0;
+        margin-top: 0;
+    }
+
+    .description {
+        text-align: center;
+        padding: 2em 2em 0 2em;
+        font-size: 1.1em;
+        font-weight: 200;
+
+        > b {
+            color: $secondary;
+        }
+    }
+}
+
+#swipe-instructions {
+    position: absolute;
+    height: 15vh;
+    font-weight: 200;
+    font-size: 1em;
+    top: 75vh;
+    text-align: center;
+}
+
+#swipe-btn {
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    width: 40px;
+    height: 75px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+
+#swipe-btn::after {
+    position: absolute;
+    content: '';
+    height: 20px;
+    width: 20px;
+    background-color: $secondary;
+    border-radius: 100%;
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%);
+    opacity: 100%;
+    animation: slide 1250ms ease-in-out infinite;
+    animation-delay: 500ms;
+}
+
+@keyframes slide {
+    from {
+        transform: translate(-50%, 0%);
+        opacity: 100%;
+    }
+
+    to {
+        transform: translate(-50%, 100%);
+        opacity: 0%;
+    }
+}
+
+@media (min-width: 768px) {
+    .hero-section {
+        .greeting-ctn {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            .greeting-wrapper {
+                .greeting {
+                    font-size: 2em;
+                }
+            }
+        }
+        .description {
+            width: clamp(300px, 50%, 500px);
+            text-align: center;
+            padding: 2em 2em 0 2em;
+            font-size: 1.1em;
+        letter-spacing:2px;
+        line-height: 1.6;
+
+    
+            > b {
+                color: $accent;
+            }
         }
     }
 }

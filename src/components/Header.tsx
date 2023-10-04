@@ -1,4 +1,4 @@
-import { useLayoutEffect } from "react";
+import { useLayoutEffect, useState } from "react";
 import "./Header.scss";
 import { useActiveSectionContext } from "../context/activeElementContext";
 import { links } from "../lib/types";
@@ -8,6 +8,8 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 function Header() {
   const { activeSection, setActiveSection, setTimeOfLastClick } =
     useActiveSectionContext();
+
+  const [isShowing, setIsShowing] = useState(false);
 
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -40,11 +42,21 @@ function Header() {
       );
     });
   };
-
   return (
     <header>
       <nav className="navbar">
-        <ul>{renderLinks()}</ul>
+        <div
+          className={`hamburger ${isShowing ? "showing" : ""}`}
+          onClick={() => setIsShowing(!isShowing)}
+        >
+          <span className="hamburger-bar"></span>
+          <span className="hamburger-bar"></span>
+          <span className="hamburger-bar"></span>
+          <span className="hamburger-bar"></span>
+        </div>
+        <ul className={`links ${isShowing ? "showing" : ""}`}>
+          {renderLinks()}
+        </ul>
       </nav>
     </header>
   );
