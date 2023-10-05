@@ -1,5 +1,12 @@
 @import '../_variables.scss';
 
+.projects-section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+
 
 .gallery > h1 {
 	font-size:clamp(2em, 4vw, 6em);
@@ -13,6 +20,9 @@
 
 .gallery {
   display:flex;	
+  width: 100%;
+  justify-content: space-between;
+  width: clamp(300px, 100%, 1000px);
   /* outline:1px solid red; */
 }
 
@@ -23,7 +33,7 @@
 .right {
 	height:100vh;
 	/* outline:1px solid purple; */
-	width:50%;
+	// width:50%;
 	display:flex;
 	flex-direction:column;
 	justify-content:center;
@@ -31,7 +41,7 @@
 
 .desktopContent {
 	margin:auto;
-	width:80%;
+	// width:80%;
 }
 
 .desktopContentSection {
@@ -50,8 +60,8 @@
 
 
 .desktopPhotos {
-	width:40vw;
-	height:40vw;
+	width:30vw;
+	height:30vw;
 	border-radius:20px;
 	position:relative;
 	overflow:hidden;
