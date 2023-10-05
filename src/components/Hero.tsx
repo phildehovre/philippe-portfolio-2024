@@ -21,7 +21,7 @@ function Hero() {
           { y: "0%" },
           {
             opacity: 1,
-            y: "-94%",
+            y: "-46%",
             duration: 2.5,
             ease: "elastic.out(1, 0.3)",
           }
@@ -70,6 +70,11 @@ function Hero() {
     <div className="hero-section" ref={ref}>
       <div className="greeting-ctn">
         <div className="greeting-wrapper">
+          <div className="greeting">
+            {renderWelcome()}
+            <h1 className="title">Hello!</h1>
+          </div>
+
           <div className="greeting">{renderWelcome()}</div>
         </div>
       </div>

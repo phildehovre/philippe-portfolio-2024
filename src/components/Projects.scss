@@ -40,6 +40,12 @@
 	display:flex;
 	flex-direction:column;
 	justify-content:center;
+
+	> h1 {
+		color: $secondary;
+		font-weight: bolder;
+		font-size: 4em;
+	}
 }
 
 
@@ -57,9 +63,6 @@
 	width:100%;
 	height:100%;
 }
-
-
-
 
 
 /* small screen / mobile layout */
@@ -87,6 +90,29 @@
 	left: 0;
 	width: 100%
 	
+}
+
+.buttons-ctn {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	gap: 1em;
+	
+	.detail-link {
+		background-color: transparent;
+		border-radius: 16px;
+		border: 2px solid $secondary;
+		cursor: pointer;
+		text-decoration: none;
+		color: white;
+		width: 40%;
+		padding: 1em 1em;
+		text-align: center;
+
+&:hover {
+	background-color: $secondary;
+}
+	}
 }
 
 
@@ -136,6 +162,8 @@
 		
 		.detail-link {
 			background-color: $secondary;
+			text-decoration: none;;
+			color: white;
 			width: 50%;
 	padding: .5em 1em;
 	text-align: center;

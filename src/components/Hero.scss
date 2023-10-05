@@ -9,16 +9,16 @@
     z-index: -1;
 
 
-    > * {
-        // outline: 1px solid red;
-    }
+    // > * {
+    //     outline: 1px solid red;
+    // }
 
     .greeting-ctn {
-        height: 150px;
+        height: 250px;
         width: clamp(300px, 50%, 500px);
         overflow-y: hidden;
         position: relative;
-
+        
         &::before {
             content: '';
             position: absolute  ;
@@ -27,11 +27,11 @@
             height: 100%;
             width: 100%;
             background: rgb(0,0,0);
-            background: linear-gradient(0deg, rgba(0, 0, 0, 0.856) 15%, rgba(255, 255, 255, 0) 50%, hsla(0, 0%, 0%, 0.87) 85%);
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.959) 20%, rgba(255, 255, 255, 0) 50%, hsla(0, 0%, 0%, 0.980) 85%);
             z-index: 10;
-
+            
         }
-
+        
 
         .greeting-wrapper {
             position: relative;
@@ -40,9 +40,11 @@
             z-index: 1;
 
             .greeting {
+                // height: 100%;
                 width: 100%;
                 text-align: center;
                 font-size: 1.5em;
+                line-height: 1.9em;
 
                 > h1 {
                     margin: 0;

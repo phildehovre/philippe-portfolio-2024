@@ -1,5 +1,4 @@
 export const welcomeText = [
-  "hello",
   "bonjour",
   "hallo",
   "merhaba",
@@ -19,6 +18,7 @@ export const welcomeText = [
   "привет",
   "שלום",
   "bonjour",
+  "Hello!",
   "hallo",
   "merhaba",
   "سلام",
@@ -35,7 +35,6 @@ export const welcomeText = [
   "cześć",
   "salut",
   "привет",
-  "hello!",
   "שלום",
 ];
 
