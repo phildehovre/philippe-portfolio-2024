@@ -12,7 +12,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        width: clamp(300px, 100%, 1000px);
+        width: $section-clamp;
         gap: 1em;
 
 

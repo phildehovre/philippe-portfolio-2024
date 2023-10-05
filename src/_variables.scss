@@ -13,3 +13,7 @@ $bg-color: #000000;
 $accent: #B0FE76;
 $secondary: teal;
 $secondary-o2: rgba(0, 128, 128, 0.322);
+
+// Layout
+
+$section-clamp: clamp(300px, 100%, 1000px)
