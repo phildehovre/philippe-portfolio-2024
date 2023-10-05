@@ -2,34 +2,8 @@ import { useSectionInView } from "../lib/useElementInViewport";
 import "./Experience.scss";
 import { experienceDataType } from "../lib/types";
 import { experienceData } from "../lib/text";
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
-import React, { useEffect, useRef } from "react";
 
 function Experience() {
-  const containerRef = useRef<HTMLDivElement>(null);
-  useEffect(() => {
-    const options = {
-      root: null,
-      rootMargin: "0px",
-      threshold: 0.5,
-    };
-    const handleIntersection = (entries: any) => {
-      entries.forEach((entry: any) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("animate");
-        }
-      });
-    };
-    const observer = new IntersectionObserver(handleIntersection, options);
-
-    observer.observe(document.querySelector(".experience-element-headline")!);
-
-    return () => observer.disconnect();
-  }, []);
-
   const { ref } = useSectionInView("Experience");
   return (
     <div ref={ref} id="experience" className="experience-section">
