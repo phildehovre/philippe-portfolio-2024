@@ -10,6 +10,35 @@
 
     .experience-ctn {
         width: $section-clamp;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5em;
+
+        .experience-element- {
+            &card {
+                background-color: $secondary-o2;
+                padding: 1.5em;
+                border-radius: 16px;
+                backdrop-filter: blur(80px);
+                list-style: none;
+            }
+
+            &headline {
+                color: $accent
+            }
+            &company {
+
+                >span {
+                    color: $secondary;
+                }
+            }
+            
+            &date {
+                color: yellow
+            }
+        }
     }
 
 }

@@ -184,7 +184,21 @@ export const experienceData: experienceDataType[] = [
     icon: faGraduationCap
   },
   {
-    position: "Freelance Web Developer",
+    position: "Freelace Web Developer",
+    company: "Self-employed",
+    date: "Feb 2022 - May 2022",
+    description: "Apart from consistently updating and re-designing my own website, I have also worked on a few freelance projects. I have worked on a few websites for musicians, using React and Tailwind. I have also worked on a few websites for small businesses.",
+    icon: faGraduationCap
+  },
+  {
+    position: "Freelance Web Deveoper",
+    company: "Self-employed",
+    date: "Feb 2022 - May 2022",
+    description: "Apart from consistently updating and re-designing my own website, I have also worked on a few freelance projects. I have worked on a few websites for musicians, using React and Tailwind. I have also worked on a few websites for small businesses.",
+    icon: faGraduationCap
+  },
+  {
+    position: "Freelnce Web Developer",
     company: "Self-employed",
     date: "Feb 2022 - May 2022",
     description: "Apart from consistently updating and re-designing my own website, I have also worked on a few freelance projects. I have worked on a few websites for musicians, using React and Tailwind. I have also worked on a few websites for small businesses.",
