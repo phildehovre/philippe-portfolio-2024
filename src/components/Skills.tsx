@@ -28,12 +28,12 @@ function Skills() {
   const { ref } = useSectionInView("Skills");
 
   return (
-    <div className="skills-section" ref={ref}>
+    <div className="skills-section" ref={ref} id="skills">
       <h1>My Skills</h1>
-      <div className="skills-ctn">
+      <ul className="skills-ctn">
         {skillsObject.map((skill) => {
           return (
-            <div
+            <li
               title={skill.category}
               className="skill"
               style={{ border: `2px solid ${skill.color}` }}
@@ -42,10 +42,10 @@ function Skills() {
               <div title={skill.category} className="skill-name">
                 {skill.name}
               </div>
-            </div>
+            </li>
           );
         })}
-      </div>
+      </ul>
     </div>
   );
 }

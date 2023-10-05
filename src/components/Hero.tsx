@@ -18,12 +18,13 @@ function Hero() {
       mm.add("(min-width: 600px)", () => {
         tl.fromTo(
           ".greeting",
-          { y: "0%" },
+          { y: "0%", opacity: 0 },
           {
             opacity: 1,
             y: "-46%",
             duration: 2.5,
             ease: "elastic.out(1, 0.3)",
+            delay: 0.3,
           }
         );
       });

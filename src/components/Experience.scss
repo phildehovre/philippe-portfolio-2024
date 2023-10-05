@@ -1,0 +1,15 @@
+
+@import '../variables.scss';
+
+.experience-section {
+    height: 100svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .experience-ctn {
+        width: $section-clamp;
+    }
+
+}

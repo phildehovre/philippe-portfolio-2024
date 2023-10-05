@@ -1,3 +1,7 @@
+import { faGraduationCap, faMicrophoneAlt } from "@fortawesome/free-solid-svg-icons";
+import React from "react";
+import { experienceDataType } from "./types";
+
 export const welcomeText = [
   "bonjour",
   "hallo",
@@ -168,4 +172,22 @@ export const skillsObject = [
     "category": "Backend as a Service",
     "color": "violet"
   }
+]
+
+
+export const experienceData: experienceDataType[] = [
+  {
+    position: "Intern Front-End Developer",
+    company: "Setmixer",
+    date: "Feb 2022 - May 2022",
+    description: "Setmixer is a music tech startup that helps musicians and band record their live shows. I worked on the front-end of the web application, using React and Tailwind.",
+    icon: faGraduationCap
+  },
+  {
+    position: "Freelance Web Developer",
+    company: "Self-employed",
+    date: "Feb 2022 - May 2022",
+    description: "Apart from consistently updating and re-designing my own website, I have also worked on a few freelance projects. I have worked on a few websites for musicians, using React and Tailwind. I have also worked on a few websites for small businesses.",
+    icon: faGraduationCap
+  },
 ]

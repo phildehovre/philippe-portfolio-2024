@@ -22,7 +22,7 @@
   display:flex;	
   width: 100%;
   justify-content: space-between;
-  width: clamp(300px, 100%, 1000px);
+  width: $section-clamp;
   /* outline:1px solid red; */
 }
 

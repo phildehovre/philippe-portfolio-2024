@@ -37,7 +37,7 @@ function Header() {
           }}
           className={activeSection === link.name ? "active" : ""}
         >
-          {link.name}
+          <a href={link.hash}>{link.name}</a>
         </li>
       );
     });

@@ -50,6 +50,12 @@ header {
             text-align: center;;
             padding: .8em 1em;
             border-radius: 30px;
+
+            > a {
+                text-decoration: none;
+                color: inherit;
+
+            }
             
         }
     }
