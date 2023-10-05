@@ -18,7 +18,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-intersection-observer": "^9.5.2",
-    "sass": "^1.68.0"
+    "sass": "^1.68.0",
+    "split-type": "^0.3.3"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",

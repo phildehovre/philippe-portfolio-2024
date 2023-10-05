@@ -1,3 +1,29 @@
+@import '../variables.scss';
+
 .skills-section {
-    min-height: 100svh;
+    min-height: 75svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+    .skills-ctn {
+        display: flex;
+        flex-wrap: wrap;
+        width: clamp(300px, 100%, 1000px);
+        gap: 1em;
+
+
+        .skill {
+            padding: 1rem;
+            background-color: $secondary-o2;
+            border-radius: 16px;
+            transition: 250ms ease-in-out all;
+
+            &:hover {
+                background-color: $secondary;
+            }
+        }
+    }
 }

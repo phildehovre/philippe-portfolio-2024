@@ -86,3 +86,86 @@ export const aboutMeText = `As a musician turned developer, I've embraced the wo
 My multilingual skills, including native proficiency in French and English, are assets that enable effective communication in diverse teams.
 \n
 I'm excited about opportunities to contribute my skills and enthusiasm to innovative organizations, such as Itransition, Civica, and Acurable, and I look forward to discussing how I can make a meaningful impact on your team.`;
+
+
+export const skills = [
+  'Javascript ES6','Typescript', 'CSS', 'Sass', 'Tailwind', 'Git',  'React', 'Next.js', 'RESTful', 'Adobe Illustrator', 'Figma', 'Package Managers', 'BaaS (Firebase, Supabase)'
+]
+
+export const skillsObject = [
+  {
+    "name": "Javascript ES6",
+    "category": "Programming Languages",
+    "color": "red"
+  },
+  {
+    "name": "Typescript",
+    "category": "Programming Languages",
+    "color": "red"
+  },
+  {
+    "name": "CSS",
+    "category": "CSS Preprocessors",
+    "color": "coral"
+  },
+  {
+    "name": "Sass",
+    "category": "CSS Preprocessors",
+    "color": "coral"
+  },
+  {
+    "name": "Tailwind",
+    "category": "CSS Frameworks",
+    "color": "coral"
+  },
+  {
+    "name": "Git",
+    "category": "Version Control",
+    "color": "gray"
+  },
+  {
+    "name": "React",
+    "category": "Front-end Frameworks",
+    "color": "cyan"
+  },
+  {
+    "name": "Next.js",
+    "category": "Front-end Frameworks",
+    "color": "cyan"
+  },
+  {
+    "name": "RESTful",
+    "category": "APIs & Services",
+    "color": "green"
+  },
+  {
+    "name": "Adobe Illustrator",
+    "category": "Design Software",
+    "color": "orange"
+  },
+  {
+    "name": "Figma",
+    "category": "Design Software",
+    "color": "orange"
+  },
+  {
+    "name": "UI/UX",
+    "category": "Design Discipline",
+    "color": "dodgerBlue"
+  },
+  {
+    "name": "Package Managers",
+    "category": "Development Tools",
+    "color": "dodgerBlue"
+  },
+  {
+    "name": "GSAP",
+    "category": "Development Tools",
+    "color": "dodgerBlue"
+  },
+  {
+    "name": "BaaS (Firebase, Supabase)",
+    "category": "Backend as a Service",
+    "color": "violet"
+  }
+]
