@@ -5,15 +5,47 @@ import gsap from "gsap";
 function Backdrop() {
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
-      gsap.set(".backdrop", { scale: 0.6 });
+      gsap.set(".first", { scalex: 1.2 });
+      gsap.set(".second", { scaleY: 1.2, scale: 0.54, y: "50%" });
+      gsap.set(".third", { scale: 0.2, y: "-50%" });
       gsap
         .to(
-          ".backdrop",
+          ".first",
 
           {
             scale: 1,
-            duration: 7,
+            duration: 15,
             y: "25%",
+            scaleX: 0.8,
+            ease: "power1.inOut",
+          }
+        )
+        .repeat(-1)
+        .yoyo(true);
+      gsap
+        .to(
+          ".second",
+
+          {
+            scale: 1,
+            duration: 10,
+            y: "25%",
+            scaleY: 0.8,
+            ease: "power1.inOut",
+          }
+        )
+        .repeat(-1)
+        .yoyo(true);
+      gsap
+        .to(
+          ".third",
+
+          {
+            scale: 1,
+            duration: 17,
+            y: "25%",
+            scaleY: 0.8,
+            ease: "power1.inOut",
           }
         )
         .repeat(-1)
@@ -22,7 +54,13 @@ function Backdrop() {
     return () => ctx.revert();
   }, []);
 
-  return <div className="backdrop"></div>;
+  return (
+    <>
+      <div className="blob first"></div>
+      <div className="blob second"></div>
+      <div className="blob third"></div>
+    </>
+  );
 }
 
 export default Backdrop;
