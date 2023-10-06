@@ -1,0 +1,42 @@
+@import '../variables.scss';
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+    height: 100svh;
+    width: 100svw;
+    overflow-x: hidden;
+    
+    .about-ctn {
+        display: flex;
+        justify-content: center;
+        gap: 2em;
+        flex-direction: reverse;
+        z-index: 1;
+        width: $section-clamp;
+        align-items: center;
+
+        > p{ 
+            width: 40%
+        }
+
+        #design-element {
+            content: '';
+            height: 100%;
+            border-left: 7.5px solid $secondary;
+
+        }
+
+        #about-title {
+            text-align: right;
+            color: $secondary;
+            font-size: 4em;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+}
