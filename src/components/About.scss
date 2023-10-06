@@ -1,43 +1,59 @@
 @import '../variables.scss';
 
 .about-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem 0;
-    height: 75svh;
-    width: 100svw;
     overflow-x: hidden;
-    margin-bottom: 10em;;
+
     
     .about-ctn {
         display: flex;
+        flex-direction: column;
         justify-content: center;
-        gap: 2em;
-        flex-direction: reverse;
-        z-index: 1;
-        width: $section-clamp;
         align-items: center;
-
+        
         > p{ 
-            width: 40%
+            text-align: justify;
+            width: 80%;
+            padding: .5em
         }
 
-        #design-element {
-            content: '';
-            height: 100%;
-            border-left: 7.5px solid $secondary;
-
-        }
-
+        
         #about-title {
             text-align: right;
-            color: $secondary;
+            color: $accent;
+            margin-bottom: 0;
             font-size: 4em;
             display: flex;
             align-items: center;
         }
     }
+    
+}
 
+@media (min-width: 768px) {
+    .about-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 0;
+        height: 75svh;
+        width: 100svw;
+        margin-bottom: 10em;
+
+        .about-ctn {
+            gap: 2em;
+            flex-direction: reverse;
+            width: $section-clamp;
+            z-index: 1;
+            
+    }
+}
+    
+    #design-element {
+        content: '';
+        height: 100%;
+        border-left: 7.5px solid $secondary;
+        
+    }
+    
 }

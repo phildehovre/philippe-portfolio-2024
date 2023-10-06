@@ -69,8 +69,9 @@ function Hero() {
 
   return (
     <div className="hero-section" ref={ref}>
-      <div className="greeting-ctn">
-        <div className="greeting-wrapper">
+      <div className="greeting-ctn desktop">
+        <h1 className="greeting-wrapper mobile">Hello!</h1>
+        <div className="greeting-wrapper desktop">
           <div className="greeting">
             {renderWelcome()}
             <h1 className="title">Hello!</h1>

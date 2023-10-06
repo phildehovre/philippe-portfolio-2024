@@ -1,7 +1,7 @@
 @import './_variables.scss';
 
 :root {
-  font-family: $font-oxygen;
+  font-family: $font-montserrat;
   line-height: 1.5;
   font-weight: 400;
 
@@ -21,11 +21,11 @@
 body {
   display: flex;
   place-content: center;
+  overflow-x: hidden;
   min-width: 320px;
   min-height: 100vh;
   margin: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
 
 }
 

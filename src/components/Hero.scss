@@ -8,6 +8,8 @@
     align-items: center;
     z-index: -1;
 
+    
+
 
     // > * {
     //     outline: 1px solid red;
@@ -16,28 +18,37 @@
     .greeting-ctn {
         height: 250px;
         width: clamp(300px, 50%, 500px);
-        overflow-y: hidden;
+        overflow-y: hidden; // IMPORTANT!
         position: relative;
-        
-        &::before {
-            content: '';
-            position: absolute  ;
-            top: 0;
-            left: 15%;
-            height: 100%;
-            width: 70%;
-            background: rgb(0,0,0);
-            background: linear-gradient(0deg, rgb(0, 0, 0) 20%, rgba(255, 255, 255, 0) 50%, hsl(0, 0%, 0%) 80%);
-            z-index: 10;
-            
+
+        .desktop {
+            display: none;
         }
         
+        .mobile {
+            text-align: center;
+            color: transparent;
+            //  -webkit-text-stroke: px #000;
+             -webkit-background-clip: text;
+             background-clip: text;
+             background-size: cover; /* Adjust as needed to cover the container */
+             background-image: linear-gradient(45deg, rgba(0,255,248,1) 40%, rgba(82,255,0,1) 100%);
+            //  background-image: url('src\assets\flower-bkg_bright-web.jpg');
+             background-attachment: fixed; /* Make the background fixed */
+            font-size: 5em;
+            // padding: 0 10px;
 
+        }
+
+        
         .greeting-wrapper {
             position: relative;
             width: 100%;
             height: 100%;
             z-index: 1;
+            // outline: 1px solid red;
+            
+
 
             .greeting {
                 // height: 100%;
@@ -69,7 +80,7 @@
         font-weight: 200;
 
         > b {
-            color: $secondary;
+            color: $accent;
         }
     }
 }
@@ -109,6 +120,8 @@
     animation-delay: 500ms;
 }
 
+
+
 @keyframes slide {
     from {
         transform: translate(-50%, 0%);
@@ -128,6 +141,24 @@
             flex-direction: row;
             justify-content: center;
 
+            &::after {
+                content: '';
+                position: absolute  ;
+                top: 0;
+                left: 15%;
+                height: 100%;
+                width: 70%;
+                background: rgb(0,0,0);
+                background: linear-gradient(0deg, rgb(0, 0, 0) 20%, rgba(255, 255, 255, 0) 50%, hsl(0, 0%, 0%) 80%);
+                z-index: 10;    
+            }
+
+            .desktop {
+                display: block;
+            }
+            .mobile {
+                display: none;
+            }
             .greeting-wrapper {
                 .greeting {
                     font-size: 2em;
@@ -143,9 +174,7 @@
         line-height: 1.6;
 
     
-            > b {
-                color: $accent;
-            }
+      
         }
     }
 }

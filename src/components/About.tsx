@@ -27,34 +27,38 @@ function About() {
       const start = "center center";
       const end = "center center";
 
-      ScrollTrigger.create({
-        trigger: ".about-ctn",
-        start: start,
-        end: end,
-        animation: tlLeft,
-        pin: "#about-content",
-        scrub: 0.5,
-        markers: true,
-      });
+      const mm = gsap.matchMedia();
 
-      ScrollTrigger.create({
-        trigger: ".about-ctn",
-        start: start,
-        end: end,
-        animation: tlRight,
-        pin: "#about-title",
-        scrub: 0.5,
-        markers: true,
-      });
+      mm.add("(min-width: 600px)", () => {
+        ScrollTrigger.create({
+          trigger: ".about-ctn",
+          start: start,
+          end: end,
+          animation: tlLeft,
+          pin: "#about-content",
+          scrub: 0.5,
+          // markers: true,
+        });
 
-      ScrollTrigger.create({
-        trigger: ".about-ctn",
-        start: start,
-        end: end,
-        animation: tlCenter,
-        pin: "#design-element",
-        scrub: 0.5,
-        markers: true,
+        ScrollTrigger.create({
+          trigger: ".about-ctn",
+          start: start,
+          end: end,
+          animation: tlRight,
+          pin: "#about-title",
+          scrub: 0.5,
+          // markers: true,
+        });
+
+        ScrollTrigger.create({
+          trigger: ".about-ctn",
+          start: start,
+          end: end,
+          animation: tlCenter,
+          pin: "#design-element",
+          scrub: 0.5,
+          // markers: true,
+        });
       });
     });
 

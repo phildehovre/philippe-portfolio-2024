@@ -5,51 +5,55 @@ import gsap from "gsap";
 function Backdrop() {
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
-      gsap.set(".first", { scalex: 1.2 });
-      gsap.set(".second", { scaleY: 1.2, scale: 0.54, y: "50%" });
-      gsap.set(".third", { scale: 0.2, y: "-50%" });
-      gsap
-        .to(
-          ".first",
+      const mm = gsap.matchMedia();
 
-          {
-            scale: 1,
-            duration: 15,
-            y: "25%",
-            scaleX: 0.8,
-            ease: "power1.inOut",
-          }
-        )
-        .repeat(-1)
-        .yoyo(true);
-      gsap
-        .to(
-          ".second",
+      mm.add("(min-width: 600px)", () => {
+        gsap.set(".first", { scalex: 1.2 });
+        gsap.set(".second", { scaleY: 1.2, scale: 0.54, y: "50%" });
+        gsap.set(".third", { scale: 0.2, y: "-50%" });
+        gsap
+          .to(
+            ".first",
 
-          {
-            scale: 1,
-            duration: 10,
-            y: "25%",
-            scaleY: 0.8,
-            ease: "power1.inOut",
-          }
-        )
-        .repeat(-1)
-        .yoyo(true);
-      gsap
-        .to(
-          ".third",
+            {
+              scale: 1,
+              duration: 15,
+              y: "25%",
+              scaleX: 0.8,
+              ease: "power1.inOut",
+            }
+          )
+          .repeat(-1)
+          .yoyo(true);
+        gsap
+          .to(
+            ".second",
 
-          {
-            scale: 1,
-            duration: 17,
-            y: "25%",
-            scaleY: 0.8,
-            ease: "power1.inOut",
-          }
-        )
-        .repeat(-1)
-        .yoyo(true);
+            {
+              scale: 1,
+              duration: 10,
+              y: "25%",
+              scaleY: 0.8,
+              ease: "power1.inOut",
+            }
+          )
+          .repeat(-1)
+          .yoyo(true);
+        gsap
+          .to(
+            ".third",
+
+            {
+              scale: 1,
+              duration: 17,
+              y: "25%",
+              scaleY: 0.8,
+              ease: "power1.inOut",
+            }
+          )
+          .repeat(-1)
+          .yoyo(true);
+      });
     });
     return () => ctx.revert();
   }, []);

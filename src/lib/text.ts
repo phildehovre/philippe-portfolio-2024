@@ -90,7 +90,7 @@ export const aboutMeText = `As a musician turned developer, I've embraced the wo
 
 My multilingual skills, including native proficiency in French and English, are assets that enable effective communication in diverse teams.
 \n
-I'm excited about opportunities to contribute my skills and enthusiasm to innovative organizations, such as Itransition, Civica, and Acurable, and I look forward to discussing how I can make a meaningful impact on your team.`;
+I'm excited about opportunities to contribute my skills and enthusiasm to innovative organizations. I look forward to discussing how I can make a meaningful impact on your team, too!`;
 
 
 export const skills = [
