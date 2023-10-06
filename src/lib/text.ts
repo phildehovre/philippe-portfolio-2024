@@ -1,4 +1,4 @@
-import { faGraduationCap, faMicrophoneAlt } from "@fortawesome/free-solid-svg-icons";
+import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
 import { experienceDataType } from "./types";
 import {FaAddressBook} from 'react-icons/fa'
