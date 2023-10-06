@@ -1,3 +1,57 @@
+@import '../variables.scss';
+
 footer {
     height: 30svh;
+    width: 100svw;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(177, 175, 199);
+    
+    .footer-section {
+        display: flex;
+        flex-direction: column;
+        width: $section-clamp;
+        height: 100%;
+        width: 100%;
+        justify-content: space-evenly;
+        z-index: 10;
+        background-color: rgba(0, 0, 0, 0.514);
+        justify-content: center;
+        align-items: center;
+
+        .footer-ctn {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            width: 100%
+        }
+        .footer-col {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        list-style: none;
+        font-size: medium;
+        font-weight: 100;
+        gap: 1rem;
+        > li > a {
+
+            &:hover {
+                color: white;
+            }
+            transition: 150ms ease-in-out all;
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+}
+
+> p{
+    width: 100%;
+    text-align: center;
+    z-index:99 ;
+}
+
 }

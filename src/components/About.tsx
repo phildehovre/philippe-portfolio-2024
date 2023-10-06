@@ -22,36 +22,39 @@ function About() {
 
       const tlCenter = gsap.timeline();
       tlCenter.set("#design-element", { scaleY: 0 });
-      tlCenter.to("#design-element", { scaleY: 1, duration: 1, delay: 1 });
+      tlCenter.to("#design-element", { scaleY: 1, duration: 1 });
+
+      const start = "center center";
+      const end = "center center";
 
       ScrollTrigger.create({
         trigger: ".about-ctn",
-        start: "center center",
-        end: "200% center",
+        start: start,
+        end: end,
         animation: tlLeft,
         pin: "#about-content",
         scrub: 0.5,
-        // markers: true,
+        markers: true,
       });
 
       ScrollTrigger.create({
         trigger: ".about-ctn",
-        start: "center center",
-        end: "200% center",
+        start: start,
+        end: end,
         animation: tlRight,
         pin: "#about-title",
         scrub: 0.5,
-        // markers: true,
+        markers: true,
       });
 
       ScrollTrigger.create({
         trigger: ".about-ctn",
-        start: "center center",
-        end: "200% center",
+        start: start,
+        end: end,
         animation: tlCenter,
         pin: "#design-element",
         scrub: 0.5,
-        // markers: true,
+        markers: true,
       });
     });
 
