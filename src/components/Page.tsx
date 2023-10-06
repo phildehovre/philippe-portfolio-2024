@@ -9,7 +9,7 @@ function Page() {
       <Hero />
       <Skills />
       <Projects />
-      {/* <Experience /> */}
+      <Experience />
       <About />
     </main>
   );
