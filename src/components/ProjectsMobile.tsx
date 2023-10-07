@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { details } from "../lib/cases";
+import { details } from "../lib/projects";
 import { faEarth } from "@fortawesome/free-solid-svg-icons";
 import { useLayoutEffect } from "react";
 import gsap from "gsap";

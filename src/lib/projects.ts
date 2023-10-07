@@ -9,7 +9,7 @@ export const details = [
       "Figma",
       "axios",
     ],
-    img: "src/assets/images/myfy.jpg",
+    img: "https://res.cloudinary.com/dtnif6mzm/image/upload/v1696662890/Portfolio%20-%202024/myfy_phcpmf.jpg",
     color: "red",
     description:
       "A stock tracking app that allows users to create watchlists and set goals.",
@@ -18,7 +18,7 @@ export const details = [
   },
   {
     name: "Bedmar Music",
-    img: "/src/assets/images/bedmar.jpeg",
+    img: "https://res.cloudinary.com/dtnif6mzm/image/upload/v1696662891/Portfolio%20-%202024/bedmar_yz71mz.jpg",
     color: "green",
     stack: ["React", "CSS", "HTML", "Figma", "Email.js"],
     description:
@@ -28,7 +28,7 @@ export const details = [
   },
   {
     name: "Planoramic",
-    img: "/src/assets/images/planoramic.jpg",
+    img: "https://res.cloudinary.com/dtnif6mzm/image/upload/v1696662891/Portfolio%20-%202024/planoramic_ouqoze.jpg",
     stack: [
       "React",
       "Supabase",
@@ -44,7 +44,7 @@ export const details = [
   },
   {
     name: "Goodles",
-    img: "/src/assets/images/goodles.jpg",
+    img: "https://res.cloudinary.com/dtnif6mzm/image/upload/v1696662890/Portfolio%20-%202024/goodles_jjo8ks.jpg",
     color: "yellow",
     stack: ["React", "Supabase", "React-Query", "Google Calendar API"],
     description:
@@ -54,7 +54,7 @@ export const details = [
   },
   {
     name: "Sean Jackson Band",
-    img: "/src/assets/images/seanjacksonband.jpg",
+    img: "https://res.cloudinary.com/dtnif6mzm/image/upload/v1696662891/Portfolio%20-%202024/seanjacksonband_espjbx.jpg",
     color: "yellow",
     stack: ["React", "Redux", "Node", "Express", "PostgreSQL"],
     description:

@@ -2,7 +2,7 @@ import { useLayoutEffect } from "react";
 import "./Projects.scss";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import { details } from "../lib/cases";
+import { details } from "../lib/projects";
 import DetailCard from "./DetailCard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEarth } from "@fortawesome/free-solid-svg-icons";
