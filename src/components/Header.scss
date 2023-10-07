@@ -54,11 +54,15 @@ header {
             > a {
                 text-decoration: none;
                 color: inherit;
+                transition: 150ms ease-in-out all;
 
+                &:hover {
+                    color: $accent;
+                }
             }
-            
         }
     }
+    
     .hamburger {
         padding: 1em 0;
         margin-right: 2em;

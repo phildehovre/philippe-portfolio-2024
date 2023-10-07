@@ -14,12 +14,12 @@ export const links = [
       hash: "#projects",
     },
     {
-      name: "About",
-      hash: "#about",
-    },
-    {
       name: "Experience",
       hash: "#experience",
+    },
+    {
+      name: "About",
+      hash: "#about",
     },
     {
       name: "Contact",
