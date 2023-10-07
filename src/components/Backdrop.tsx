@@ -59,11 +59,11 @@ function Backdrop() {
   }, []);
 
   return (
-    <div className='container'>
+    <div className="container">
       <div className="blob first"></div>
       <div className="blob second"></div>
       <div className="blob third"></div>
-    </>
+    </div>
   );
 }
 
