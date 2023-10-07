@@ -4,6 +4,7 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import "./About.scss";
 import { useSectionInView } from "../lib/useElementInViewport";
 import { aboutMe } from "../lib/text";
+import SectionHeading from "./SectionHeading";
 
 function About() {
   const { ref } = useSectionInView("About");
@@ -69,7 +70,7 @@ function About() {
   return (
     <div ref={ref} className="about-section">
       <div className="about-ctn">
-        <h1 id="about-title">{aboutMe.title}</h1>
+        <SectionHeading>About Me</SectionHeading>
         <div id="design-element"></div>
         <p id="about-content">{aboutMe.content}</p>
       </div>

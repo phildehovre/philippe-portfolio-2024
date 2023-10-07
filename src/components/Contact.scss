@@ -53,7 +53,8 @@
 
 #send-btn {
    outline: $accent 1px solid;
-   background-color: $secondary;
+    border: none;
+   background-color: $secondary-o1;
    color: white;
    text-transform: uppercase;
    text-align: center;
@@ -61,16 +62,17 @@
    font-weight: 700;
    border-radius: 6px;
    transition: 250ms all ease-in-out;
+   cursor: pointer;
 
    &:hover {
-       background-color: white;
+       background-color: $accent;
        outline: $secondary 1px solid;
-       color: $accent;
+       color: black;
    }
 }
 
 #message {
     grid-column: span 10;
     grid-row: span 5;
-    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-family: $font-montserrat;
 }

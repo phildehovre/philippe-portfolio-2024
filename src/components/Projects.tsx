@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEarth } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
 import { useSectionInView } from "../lib/useElementInViewport";
+import SectionHeading from "./SectionHeading";
 
 function Projects() {
   const { ref } = useSectionInView("Projects");
@@ -39,7 +40,7 @@ function Projects() {
           start: "top top",
           end: "bottom bottom",
           pin: ".right",
-          // markers: true,
+          markers: true,
         });
 
         //create scrolltrigger for each details section
@@ -53,11 +54,11 @@ function Projects() {
             .set(allPhotos[index], { autoAlpha: 0 });
           ScrollTrigger.create({
             trigger: headline,
-            start: "top 80%",
+            start: "top 70%",
             end: "top 50%",
             animation: animation,
             scrub: true,
-            // markers: true,
+            markers: true,
           });
         });
 
@@ -138,6 +139,7 @@ function Projects() {
   return (
     <>
       <div ref={ref}></div>
+      <SectionHeading>Projects</SectionHeading>
       <div className="projects-section" id="projects">
         <div className="gallery">
           <div className="left">

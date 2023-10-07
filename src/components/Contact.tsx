@@ -5,6 +5,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup"; // Import Yup
 import "./Contact.scss";
 import { useSectionInView } from "../lib/useElementInViewport";
+import SectionHeading from "./SectionHeading";
 
 const yupSchema = yup.object().shape({
   from_firstName: yup.string().required("First name is required"),
@@ -64,7 +65,7 @@ function Contact() {
 
   return (
     <section className="contact-ctn" id="contact" ref={ref}>
-      <h1>Contact me</h1>
+      <SectionHeading>Contact me</SectionHeading>
       <form
         ref={formRef}
         onSubmit={form.handleSubmit(onSubmit)}

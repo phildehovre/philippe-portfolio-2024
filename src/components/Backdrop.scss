@@ -6,9 +6,9 @@
     left: 20%;
     height: 175%;
     width: 200%;
-    z-index: 0;
-    background: $secondary-o1;
-    background: radial-gradient(circle, rgba(0,128,128,1) 0%, rgba(255,255,255,0) 50%, rgba(0,0,0,0) 100%);
+    z-index: -1;
+    background-image: radial-gradient(circle, rgba(0,128,128,1) 0%, rgba(255,255,255,0) 50%, rgba(0,0,0,0) 100%);
+    clip-path: url('../assets/texture.svg');
 }
 
 
@@ -19,3 +19,5 @@
         width: 400%;
     }
 }
+
+

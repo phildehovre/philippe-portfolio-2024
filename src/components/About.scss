@@ -42,6 +42,7 @@
 
         .about-ctn {
             gap: 2em;
+            flex-direction: row;
             flex-direction: reverse;
             width: $section-clamp;
             z-index: 1;

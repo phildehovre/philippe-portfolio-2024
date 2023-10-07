@@ -3,6 +3,7 @@ import { skillsObject } from "../lib/text";
 import { useSectionInView } from "../lib/useElementInViewport";
 import "./Skills.scss";
 import gsap from "gsap";
+import SectionHeading from "./SectionHeading";
 
 function Skills() {
   useLayoutEffect(() => {
@@ -30,7 +31,7 @@ function Skills() {
 
   return (
     <div className="skills-section" ref={ref} id="skills">
-      <h1>My Skills</h1>
+      <SectionHeading>My skills</SectionHeading>
       <ul className="skills-ctn">
         {skillsObject.map((skill) => {
           return (
