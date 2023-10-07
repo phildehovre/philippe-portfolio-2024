@@ -40,7 +40,7 @@ function Projects() {
           start: "top top",
           end: "bottom bottom",
           pin: ".right",
-          markers: true,
+          // markers: true,
         });
 
         //create scrolltrigger for each details section
@@ -58,7 +58,7 @@ function Projects() {
             end: "top 50%",
             animation: animation,
             scrub: true,
-            markers: true,
+            // markers: true,
           });
         });
 

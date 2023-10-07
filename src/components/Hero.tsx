@@ -68,7 +68,7 @@ function Hero() {
   };
 
   return (
-    <div className="hero-section" ref={ref}>
+    <div className="hero-section" ref={ref} id="home">
       <div className="greeting-ctn desktop">
         <h1 className="greeting-wrapper mobile">Hello!</h1>
         <div className="greeting-wrapper desktop">
@@ -85,6 +85,18 @@ function Hero() {
         I'm a <b>Front-end Developer</b> with <b>4 years</b> of experience. I
         focus on <b>React</b> (Next.js). I am also passionate about <b>UI/UX</b>{" "}
         and elegant designs.
+        <div className="hero-cta-ctn">
+          <a
+            className="hero-cta cv"
+            target="_blank"
+            href="https://drive.google.com/file/d/1NfN9R0HJ6gS2m4DMC4DOCAU2261c1Hrq/view?usp=sharing"
+          >
+            Download CV
+          </a>
+          <a className="hero-cta conact" href="contact">
+            Contact me
+          </a>
+        </div>
       </div>
       <div id="swipe-instructions">
         Scroll down for some case studies!

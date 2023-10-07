@@ -68,7 +68,7 @@ function About() {
     };
   }, []);
   return (
-    <div ref={ref} className="about-section">
+    <div ref={ref} className="about-section" id="about">
       <div className="about-ctn">
         <SectionHeading>About Me</SectionHeading>
         <div id="design-element"></div>

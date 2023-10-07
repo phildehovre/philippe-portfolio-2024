@@ -20,10 +20,9 @@
 
 .gallery {
   display:flex;	
-  width: 100%;
   justify-content: space-between;
   width: $section-clamp;
-  /* outline:1px solid red; */
+//   outline:1px solid red;
   gap: 1.5em;
 
 //   *
@@ -33,13 +32,13 @@
 }
 
 .left {
-	width:45%;
+	width:30%;
 }
 
 .right {
 	height:100vh;
-	/* outline:1px solid purple; */
-	width:45%;
+	// outline:1px solid purple;
+	width:100%;
 	display:flex;
 	flex-direction:column;
 	justify-content:center;
@@ -66,7 +65,7 @@
 
 
 .desktopPhotos {
-	width:30vw;
+	// width:30vw;
 	height:30vw;
 	border-radius:20px;
 	position:relative;

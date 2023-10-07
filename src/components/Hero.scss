@@ -8,15 +8,8 @@
     align-items: center;
     z-index: -1;
 
-    
-
-
-    // > * {
-    //     outline: 1px solid red;
-    // }
-
     .greeting-ctn {
-        height: 250px;
+        height: 150px;
         width: clamp(300px, 50%, 500px);
         overflow-y: hidden; // IMPORTANT!
         position: relative;
@@ -28,30 +21,21 @@
         .mobile {
             text-align: center;
             color: transparent;
-            //  -webkit-text-stroke: px #000;
              -webkit-background-clip: text;
              background-clip: text;
              background-size: cover; /* Adjust as needed to cover the container */
              background-image: linear-gradient(45deg, rgba(0,255,248,1) 40%, rgba(82,255,0,1) 100%);
-            //  background-image: url('src\assets\flower-bkg_bright-web.jpg');
              background-attachment: fixed; /* Make the background fixed */
             font-size: 5em;
-            // padding: 0 10px;
-
         }
-
         
         .greeting-wrapper {
             position: relative;
             width: 100%;
             height: 100%;
             z-index: 1;
-            // outline: 1px solid red;
             
-
-
             .greeting {
-                // height: 100%;
                 width: 100%;
                 text-align: center;
                 font-size: 1.5em;
@@ -61,10 +45,7 @@
                     margin: 0;
                     text-transform: capitalize;
                 }
-
-                
             }
-
         }
     }
 
@@ -83,6 +64,21 @@
             color: $accent;
         }
     }
+}
+
+.hero-cta-ctn {
+    padding: 1.5em 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.hero-cta {
+    padding: 1rem;
+    background-color: transparent;
+    border: 1px solid $accent;
+    border-radius: 25px;
+    text-decoration: none;
+    color: white;
 }
 
 #swipe-instructions {

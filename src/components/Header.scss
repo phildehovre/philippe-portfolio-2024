@@ -130,14 +130,18 @@ header {
     display: flex;
     justify-content: center;
     
-    > links > li{
-        color: $secondary;
-        font-weight: 400;
-        font-size: 1.1rem;
-        width: 100%;
-        text-align: center;;
-        padding: .8em 1em;
-        border-radius: 30px;
+    > links {
+        width: $section-clamp;
+
+        > li{
+            color: $secondary;
+            font-weight: 400;
+            font-size: 1.1rem;
+            width: 100%;
+            text-align: center;;
+            padding: .8em 1em;
+            border-radius: 30px;
+        }
         
         &.active {
             background-color: $secondary;
