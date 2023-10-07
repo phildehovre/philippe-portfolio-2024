@@ -1,12 +1,16 @@
-import { useSectionInView } from "../lib/useElementInViewport";
+// import { useSectionInView } from "../lib/useElementInViewport";
 import "./Experience.scss";
 import { experienceDataType } from "../lib/types";
 import { experienceData } from "../lib/text";
 
 function Experience() {
-  const { ref } = useSectionInView("Experience");
+  // const { ref } = useSectionInView("Experience");
   return (
-    <div ref={ref} id="experience" className="experience-section">
+    <div
+      // ref={ref}
+      id="experience"
+      className="experience-section"
+    >
       <h1>Experience</h1>
       <ul className="experience-ctn">
         {experienceData.map((experience: experienceDataType) => {
