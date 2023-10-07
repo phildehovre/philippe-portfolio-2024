@@ -79,6 +79,13 @@
     border-radius: 25px;
     text-decoration: none;
     color: white;
+    transition: 150ms ease-in-out;
+
+    &:hover {
+        background-color: $accent;
+        color: black;
+        font-weight: 600;
+    }
 }
 
 #swipe-instructions {
