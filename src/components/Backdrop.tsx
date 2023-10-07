@@ -59,10 +59,14 @@ function Backdrop() {
   }, []);
 
   return (
-    <div className='container'>
-      <div className="blob first"></div>
-      <div className="blob second"></div>
-      <div className="blob third"></div>
+    <>
+      //{" "}
+      <div className="blob-container">
+        <div className="blob first"></div>
+        {/* <div className="blob second"></div> */}
+        {/* <div className="blob third"></div> */}
+        //{" "}
+      </div>
     </>
   );
 }

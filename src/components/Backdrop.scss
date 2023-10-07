@@ -2,14 +2,34 @@
 
 .blob {
     position: fixed;
-    bottom: 0;
-    left: 20%;
-    height: 175%;
-    width: 200%;
-    z-index: -1;
-    background-image: radial-gradient(circle, rgba(0,128,128,1) 0%, rgba(255,255,255,0) 50%, rgba(0,0,0,0) 100%);
-    clip-path: url('../assets/texture.svg');
+    right: 0;
+    top: 20%;
+    height: 1000px;
+    width: 1000px;
+    border-radius: 100%;
+    z-index: 0;
+    // background-image: radial-gradient(circle, rgba(0,128,128,1) 0%, rgba(255,255,255,0) 50%, rgba(0,0,0,0) 100%);
+    background-color: $secondary;
+
+    
+    &:before {
+        content: '';
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        z-index: -1;
+        height: 1000px;
+        width: 1000px;
+        border-radius: 100%;
+        background-color: transparent;
+        background-image: radial-gradient($secondary 2px,transparent 2px);
+        background-size: 5px 5px;
+
+    }
 }
+
+
+
 
 
 @media (max-width: 599px) {
