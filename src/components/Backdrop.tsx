@@ -34,6 +34,7 @@ function Backdrop() {
               duration: 10,
               y: "25%",
               scaleY: 0.8,
+              rotate: 20,
               ease: "power1.inOut",
             }
           )
@@ -47,7 +48,7 @@ function Backdrop() {
               scale: 1,
               duration: 17,
               y: "25%",
-              scaleY: 0.8,
+              skew: 4,
               ease: "power1.inOut",
             }
           )
