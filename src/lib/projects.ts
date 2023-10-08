@@ -15,7 +15,7 @@ export const details: {stack: SkillLabel[],  name: string, img: string, color: s
     color: "red",
     description:
       "A stock tracking app that allows users to create watchlists and set goals.",
-    url: "https://myfy.vercel.app/",
+    url: "https://myfy-v3.vercel.app/",
     github: "https://github.com/phildehovre/myfi",
   },
   {

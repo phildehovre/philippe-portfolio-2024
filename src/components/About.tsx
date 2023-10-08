@@ -19,33 +19,32 @@ function About() {
       const tlLeft = gsap.timeline();
       tlLeft.set("#about-content", { x: window.innerWidth * 0.6, opacity: 0 });
       tlLeft.to("#about-content", { x: 0, opacity: 1, duration: 1.5 });
-
-      if (headlineRef?.current !== null) {
-        const tlRight = gsap.timeline();
-        tlRight.set(headlineRef?.current, {
-          x: -window.innerWidth * 0.6,
-          opacity: 0,
-        });
-
-        ScrollTrigger.create({
-          trigger: ".about-ctn",
-          start: start,
-          end: end,
-          animation: tlRight,
-          pin: headlineRef?.current,
-          scrub: 0.5,
-          // markers: true,
-        });
-        tlRight.to(headlineRef?.current, { x: 0, opacity: 1, duration: 1.5 });
-      }
-
-      const tlCenter = gsap.timeline();
-      tlCenter.set("#design-element", { scaleY: 0 });
-      tlCenter.to("#design-element", { scaleY: 1, duration: 1 });
-
       const mm = gsap.matchMedia();
 
       mm.add("(min-width: 600px)", () => {
+        if (headlineRef?.current !== null) {
+          const tlRight = gsap.timeline();
+          tlRight.set(headlineRef?.current, {
+            x: -window.innerWidth * 0.6,
+            opacity: 0,
+          });
+
+          ScrollTrigger.create({
+            trigger: ".about-ctn",
+            start: start,
+            end: end,
+            animation: tlRight,
+            pin: headlineRef?.current,
+            scrub: 0.5,
+            // markers: true,
+          });
+          tlRight.to(headlineRef?.current, { x: 0, opacity: 1, duration: 1.5 });
+        }
+
+        const tlCenter = gsap.timeline();
+        tlCenter.set("#design-element", { scaleY: 0 });
+        tlCenter.to("#design-element", { scaleY: 1, duration: 1 });
+
         ScrollTrigger.create({
           trigger: ".about-ctn",
           start: start,
