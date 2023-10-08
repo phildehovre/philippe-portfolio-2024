@@ -37,3 +37,12 @@ export const links = [
     icon: IconDefinition;
   
   }
+
+  export type SkillLabel = "libraries" |"reactQuery" | "html" | "chartjs" |"javascript" | "typecript" | "css" | "sass" | "tailwind" | "git" | "react" | "nextjs" | "apis" | "illustrator" | "figma" | "uiux" | "npm" | "gsap" | "baas" | "firebase" | "supabase";
+
+  export interface Skill {
+    label: SkillLabel;
+    name: string;
+    category: string;
+    color: string;
+  }

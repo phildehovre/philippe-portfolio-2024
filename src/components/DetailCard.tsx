@@ -1,5 +1,6 @@
 import React, { useEffect, useLayoutEffect } from "react";
 import gsap from "gsap";
+import { skillsObject } from "../lib/text";
 
 type DetailCardProps = {
   color: string;
@@ -56,19 +57,24 @@ function DetailCard(props: { index: number; detail: DetailCardProps }) {
       style={styles}
     >
       <div className="detail">
-        <div className="detail-overlay"></div>
-        {isHovered &&
-          stack.map((item) => {
-            return (
-              <p
-                key={item}
-                className={`stack-item-${index}`}
-                ref={stackItemRef}
-              >
-                {item}
-              </p>
-            );
-          })}
+        <div className="detail-overlay">
+          {isHovered &&
+            stack.map((item) => {
+              const skillObject = skillsObject.find(
+                (skill) => skill.label === item
+              );
+              return (
+                <p
+                  key={item}
+                  className={`skill stack-item-${index}`}
+                  ref={stackItemRef}
+                  style={{ border: `1px solid ${skillObject?.color}` }}
+                >
+                  {skillObject?.name}
+                </p>
+              );
+            })}
+        </div>
       </div>
     </div>
   );

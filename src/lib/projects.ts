@@ -1,13 +1,15 @@
-export const details = [
+import { SkillLabel } from "./types";
+
+export const details: {stack: SkillLabel[],  name: string, img: string, color: string, description: string, url: string, github: string}[] = [
   {
     name: "MyFy",
     stack: [
-      "React",
-      "News API + Stocks API",
-      "chart.js",
-      "Firebase",
-      "Figma",
-      "axios",
+      "react",
+      "apis",
+      "firebase",
+      "figma",
+      "uiux",
+      "libraries"
     ],
     img: "https://res.cloudinary.com/dtnif6mzm/image/upload/v1696662890/Portfolio%20-%202024/myfy_phcpmf.jpg",
     color: "red",
@@ -20,7 +22,7 @@ export const details = [
     name: "Bedmar Music",
     img: "https://res.cloudinary.com/dtnif6mzm/image/upload/v1696662891/Portfolio%20-%202024/bedmar_yz71mz.jpg",
     color: "green",
-    stack: ["React", "CSS", "HTML", "Figma", "Email.js"],
+    stack: ["react", "css", "html", "figma", "libraries"],
     description:
       "The website to a music management company. This was a very fruitful collaboration as the client was very involved in the design. The website is responsive and pixel-perfect.",
     url: "https://bedmarmusic.co.uk/",
@@ -30,11 +32,11 @@ export const details = [
     name: "Planoramic",
     img: "https://res.cloudinary.com/dtnif6mzm/image/upload/v1696662891/Portfolio%20-%202024/planoramic_ouqoze.jpg",
     stack: [
-      "React",
-      "Supabase",
-      "React-Query",
-      "Typescript",
-      "Google Calendar API",
+      "react",
+      "supabase",
+      "typecript",
+      "apis",
+      "libraries"
     ],
     color: "blue",
     description:
@@ -46,7 +48,7 @@ export const details = [
     name: "Goodles",
     img: "https://res.cloudinary.com/dtnif6mzm/image/upload/v1696662890/Portfolio%20-%202024/goodles_jjo8ks.jpg",
     color: "yellow",
-    stack: ["React", "Supabase", "React-Query", "Google Calendar API"],
+    stack: ["react", "supabase", "apis", "libraries"],
     description:
       "I engineered a to-do list application seamlessly integrated with the Google Calendar API. This dynamic tool enables users to efficiently update their calendars and manage tasks in a unified workspace",
     url: "https://goodles.vercel.app/",
@@ -56,7 +58,7 @@ export const details = [
     name: "Sean Jackson Band",
     img: "https://res.cloudinary.com/dtnif6mzm/image/upload/v1696662891/Portfolio%20-%202024/seanjacksonband_espjbx.jpg",
     color: "yellow",
-    stack: ["React", "Redux", "Node", "Express", "PostgreSQL"],
+    stack: ["react", "javascript", "html", "sass", "libraries"],
     description:
       "I rapidly developed a splash page with a contact form to address the band's urgent website issue. Embracing the design brief of 'roadhouse, 50's rock 'n' roll, vintage country,' I meticulously crafted a bespoke logo using Adobe Illustrator to capture their distinct musical essence",
     url: "https://www.seanjacksonofficial.com/",

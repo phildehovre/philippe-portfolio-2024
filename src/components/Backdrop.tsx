@@ -8,7 +8,7 @@ function Backdrop() {
       const mm = gsap.matchMedia();
 
       mm.add("(min-width: 600px)", () => {
-        gsap.set(".first", { scalex: 1.2 });
+        gsap.set(".first", { scaleX: 1.2 });
         gsap.set(".second", { scaleY: 1.2, scale: 0.54, y: "50%" });
         gsap.set(".third", { scale: 0.2, y: "-50%" });
         gsap
@@ -48,7 +48,8 @@ function Backdrop() {
               scale: 1,
               duration: 17,
               y: "25%",
-              skew: 4,
+              skewY: 4,
+              skewX: 1,
               ease: "power1.inOut",
             }
           )

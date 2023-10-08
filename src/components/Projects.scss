@@ -94,17 +94,26 @@
 	border-radius:6vw;
 }
 
+.detail {
+// display: flex;
+// height: 30%;
+// flex-wrap: wrap;	
+}
+
 .detail-overlay {
 	transform: translateY(101%);
 	height: 100%;
 	background-color: rgba(0, 0, 0, 0.966);
 	transition: 250ms ease-in-out all;
 	position: absolute;
-	top: 0;
+	height: auto;
 	right: 0;
 	bottom: 0;
 	left: 0;
-	width: 100%
+	width: 100%;
+	display: flex;
+	gap: 0.5em;
+	justify-content: center;
 	
 }
 

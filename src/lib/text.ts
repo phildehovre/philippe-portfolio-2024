@@ -2,6 +2,7 @@ import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
 import { experienceDataType } from "./types";
 import {FaAddressBook} from 'react-icons/fa'
+import { Skill } from "./types";
 
 export const welcomeText = [
   "bonjour",
@@ -97,82 +98,127 @@ export const skills = [
   'Javascript ES6','Typescript', 'CSS', 'Sass', 'Tailwind', 'Git',  'React', 'Next.js', 'RESTful', 'Adobe Illustrator', 'Figma', 'Package Managers', 'BaaS (Firebase, Supabase)'
 ]
 
-export const skillsObject = [
+export const skillsObject: Skill[] = [
   {
+    "label": "javascript",
     "name": "Javascript ES6",
     "category": "Programming Languages",
     "color": "red"
   },
   {
+    "label": "html",
+    "name": "HTML",
+    "category": "Programming Languages",
+    "color": "red"
+  },
+  {
+    "label": "typecript",
     "name": "Typescript",
     "category": "Programming Languages",
     "color": "red"
   },
   {
+    "label": "css",
     "name": "CSS",
     "category": "CSS Preprocessors",
     "color": "coral"
   },
   {
+    "label": "sass",
     "name": "Sass",
     "category": "CSS Preprocessors",
     "color": "coral"
   },
   {
+    "label": "tailwind",
     "name": "Tailwind",
     "category": "CSS Frameworks",
     "color": "coral"
   },
   {
+    "label": "git",
     "name": "Git",
     "category": "Version Control",
     "color": "gray"
   },
   {
+    "label": "react",
     "name": "React",
     "category": "Front-end Frameworks",
     "color": "cyan"
   },
   {
+    "label": "nextjs",
     "name": "Next.js",
     "category": "Front-end Frameworks",
     "color": "cyan"
   },
   {
-    "name": "RESTful",
+    "label": "apis",
+    "name": "RESTful APIs",
     "category": "APIs & Services",
     "color": "green"
   },
   {
+    "label": "illustrator",
     "name": "Adobe Illustrator",
     "category": "Design Software",
     "color": "orange"
   },
   {
+    "label": "figma",
     "name": "Figma",
     "category": "Design Software",
     "color": "orange"
   },
   {
+    "label": "uiux",
     "name": "UI/UX",
     "category": "Design Discipline",
     "color": "dodgerBlue"
   },
   {
+    "label": "npm",
     "name": "Package Managers",
     "category": "Development Tools",
     "color": "dodgerBlue"
   },
   {
+    "label": "gsap",
     "name": "GSAP",
     "category": "Development Tools",
     "color": "dodgerBlue"
   },
   {
+    "label": "baas",
     "name": "BaaS (Firebase, Supabase)",
     "category": "Backend as a Service",
     "color": "violet"
-  }
+  },
+  {
+    "label": "firebase",
+    "name": "Firebase",
+    "category": "Backend as a Service",
+    "color": "violet"
+  },
+  {
+    "label": "supabase",
+    "name": "Supabase",
+    "category": "Backend as a Service",
+    "color": "violet"
+  },
+  {
+    "label": "chartjs",
+    "name": "Chart.js",
+    "category": "Data Visualization",
+    "color": "violet"
+  },
+  {
+    "label": "libraries",
+    "name": "Third-party Libraries",
+    "category": "other",
+    "color": "purple"
+  },
 ]
 
 
