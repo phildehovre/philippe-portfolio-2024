@@ -93,7 +93,7 @@ function Hero() {
           >
             Download CV
           </a>
-          <a className="hero-cta conact" href="contact">
+          <a className="hero-cta conact" href="#contact">
             Contact me
           </a>
         </div>
