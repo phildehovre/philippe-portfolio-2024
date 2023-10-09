@@ -89,14 +89,24 @@ function Projects() {
               >
                 <FontAwesomeIcon icon={faEarth} size="lg" />
               </a>
-              <a
-                className="detail-link"
-                href={detail.github}
-                target="_blank"
-                rel="noreferrer"
-              >
-                {`< / >`}
-              </a>
+              {detail.name === "Planoramic" ? (
+                <a
+                  className="detail-link"
+                  href="#contact"
+                  title="Commercial project, code available upon request"
+                >
+                  Contact me
+                </a>
+              ) : (
+                <a
+                  className="detail-link"
+                  href={detail.github}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {`< / >`}
+                </a>
+              )}
             </span>
           </div>
         </React.Fragment>

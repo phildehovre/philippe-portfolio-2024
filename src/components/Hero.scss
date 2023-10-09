@@ -69,14 +69,15 @@
 .hero-cta-ctn {
     padding: 1.5em 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 2em;
 }
 
 .hero-cta {
     padding: 1rem;
     background-color: transparent;
     border: 1px solid $accent;
-    border-radius: 25px;
+    border-radius: 40px;
     text-decoration: none;
     color: white;
     transition: 150ms ease-in-out;

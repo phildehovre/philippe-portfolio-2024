@@ -10,6 +10,8 @@ function About() {
   const { ref } = useSectionInView("About");
   const headlineRef = useRef<HTMLHeadingElement>(null);
 
+  console.log(headlineRef.current);
+
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
@@ -22,9 +24,9 @@ function About() {
       const mm = gsap.matchMedia();
 
       mm.add("(min-width: 600px)", () => {
-        if (headlineRef?.current !== null) {
+        if (".about-headline" !== null) {
           const tlRight = gsap.timeline();
-          tlRight.set(headlineRef?.current, {
+          tlRight.set(".about-headline", {
             x: -window.innerWidth * 0.6,
             opacity: 0,
           });
@@ -34,11 +36,11 @@ function About() {
             start: start,
             end: end,
             animation: tlRight,
-            pin: headlineRef?.current,
+            pin: ".about-headline",
             scrub: 0.5,
             // markers: true,
           });
-          tlRight.to(headlineRef?.current, { x: 0, opacity: 1, duration: 1.5 });
+          tlRight.to(".about-headline", { x: 0, opacity: 1, duration: 1.5 });
         }
 
         const tlCenter = gsap.timeline();
@@ -74,7 +76,7 @@ function About() {
   return (
     <div ref={ref} className="about-section" id="about">
       <div className="about-ctn">
-        <SectionHeading ref={headlineRef}>About Me</SectionHeading>
+        <SectionHeading className="about-headline">About Me</SectionHeading>
         <div id="design-element"></div>
         <p id="about-content">{aboutMe.content}</p>
       </div>

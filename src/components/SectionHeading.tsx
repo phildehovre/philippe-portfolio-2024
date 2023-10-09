@@ -2,8 +2,8 @@ import { forwardRef, useEffect, useRef } from "react";
 import "./SectionnHeading.scss";
 
 const SectionHeading = forwardRef(
-  (props: { children: React.ReactNode }, ref: any) => {
-    const { children } = props;
+  (props: { children: React.ReactNode; className: string }, ref: any) => {
+    const { children, className } = props;
 
     const headlineRef = useRef<HTMLHeadingElement>(null);
 
@@ -14,7 +14,7 @@ const SectionHeading = forwardRef(
     }, [ref]);
 
     return (
-      <h1 ref={headlineRef} className="section-heading">
+      <h1 ref={headlineRef} className={`section-heading ${className}`}>
         {children}
       </h1>
     );

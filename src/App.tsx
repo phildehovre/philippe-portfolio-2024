@@ -16,12 +16,12 @@ function App() {
   requestAnimationFrame(raf);
 
   return (
-    <>
+    <div className="app">
       <Header />
       <Backdrop />
       <Page />
       <Footer />
-    </>
+    </div>
   );
 }
 
