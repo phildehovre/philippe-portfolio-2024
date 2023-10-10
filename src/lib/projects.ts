@@ -2,6 +2,22 @@ import { SkillLabel } from "./types";
 
 export const details: {stack: SkillLabel[],  name: string, img: string, color: string, description: string, url: string, github: string}[] = [
   {
+    name: "Metronome",
+    stack: [
+      "react",
+      "apis",
+      "figma",
+      "uiux",
+      "libraries"
+    ],
+    img: "https://res.cloudinary.com/dtnif6mzm/image/upload/v1696960052/Portfolio%20-%202024/metronome_vze5gt.png",
+    color: "red",
+    description:
+      "A stock tracking app that allows users to create watchlists and set goals.",
+    url: "https://metronomeapp.vercel.app/",
+    github: "https://github.com/phildehovre/vite-metronome",
+  },
+  {
     name: "MyFy",
     stack: [
       "react",
