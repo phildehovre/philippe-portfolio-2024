@@ -2,7 +2,7 @@ import { forwardRef, useEffect, useRef } from "react";
 import "./SectionnHeading.scss";
 
 const SectionHeading = forwardRef(
-  (props: { children: React.ReactNode; className: string }, ref: any) => {
+  (props: { children: React.ReactNode; className?: string }, ref: any) => {
     const { children, className } = props;
 
     const headlineRef = useRef<HTMLHeadingElement>(null);

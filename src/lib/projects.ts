@@ -28,22 +28,22 @@ export const details: {stack: SkillLabel[],  name: string, img: string, color: s
     url: "https://bedmarmusic.co.uk/",
     github: "https://github.com/phildehovre/bedmar-music-def",
   },
-  {
-    name: "Planoramic",
-    img: "https://res.cloudinary.com/dtnif6mzm/image/upload/v1696662891/Portfolio%20-%202024/planoramic_ouqoze.jpg",
-    stack: [
-      "react",
-      "supabase",
-      "typecript",
-      "apis",
-      "libraries"
-    ],
-    color: "blue",
-    description:
-      "A marketing campaign management tool where users create repeatable scalable templates for their campaigns. The app is integrated with the Google Calendar API and allows users to update their calendars and manage tasks in a unified workspace.  ",
-    url: "https://fiftycal.vercel.app/",
-    github: "https://github.com/phildehovre/Planoramic",
-  },
+  // {
+  //   name: "Planoramic",
+  //   img: "https://res.cloudinary.com/dtnif6mzm/image/upload/v1696662891/Portfolio%20-%202024/planoramic_ouqoze.jpg",
+  //   stack: [
+  //     "react",
+  //     "supabase",
+  //     "typecript",
+  //     "apis",
+  //     "libraries"
+  //   ],
+  //   color: "blue",
+  //   description:
+  //     "A marketing campaign management tool where users create repeatable scalable templates for their campaigns. The app is integrated with the Google Calendar API and allows users to update their calendars and manage tasks in a unified workspace.  ",
+  //   url: "https://fiftycal.vercel.app/",
+  //   github: "https://github.com/phildehovre/Planoramic",
+  // },
   {
     name: "Goodles",
     img: "https://res.cloudinary.com/dtnif6mzm/image/upload/v1696662890/Portfolio%20-%202024/goodles_jjo8ks.jpg",
