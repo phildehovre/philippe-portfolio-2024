@@ -11,7 +11,7 @@ export const details: {stack: SkillLabel[],  name: string, img: string, color: s
       "libraries",
 
     ],
-    img: "https://res.cloudinary.com/dtnif6mzm/image/upload/v1696960052/Portfolio%20-%202024/metronome_vze5gt.png",
+    img: "https://res.cloudinary.com/dtnif6mzm/image/upload/c_thumb,w_200,g_face/v1696960052/Portfolio%20-%202024/metronome_vze5gt.png",
     color: "red",
     description:
       "A stock tracking app that allows users to create watchlists and set goals.",
