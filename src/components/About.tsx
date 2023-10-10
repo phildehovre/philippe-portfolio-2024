@@ -38,7 +38,7 @@ function About() {
             animation: tlRight,
             pin: ".about-headline",
             scrub: 0.5,
-            markers: true,
+            // markers: true,
           });
           tlRight.to(".about-headline", { x: 0, opacity: 1, duration: 1.5 });
         }
