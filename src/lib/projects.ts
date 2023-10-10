@@ -8,7 +8,8 @@ export const details: {stack: SkillLabel[],  name: string, img: string, color: s
       "apis",
       "figma",
       "uiux",
-      "libraries"
+      "libraries",
+
     ],
     img: "https://res.cloudinary.com/dtnif6mzm/image/upload/v1696960052/Portfolio%20-%202024/metronome_vze5gt.png",
     color: "red",
