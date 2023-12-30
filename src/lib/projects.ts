@@ -14,7 +14,7 @@ export const details: {stack: SkillLabel[],  name: string, img: string, color: s
     img: "https://res.cloudinary.com/dtnif6mzm/image/upload/v1696960052/Portfolio%20-%202024/metronome_vze5gt.png",
     color: "red",
     description:
-      "A stock tracking app that allows users to create watchlists and set goals.",
+      "A useful tool for DJ's and playlist creators. The app allows users to calculate the BPM of a song and create playlists with songs of similar tempos, as well as providing the usual functionality of a metronome!.",
     url: "https://metronomeapp.vercel.app/",
     github: "https://github.com/phildehovre/vite-metronome",
   },
