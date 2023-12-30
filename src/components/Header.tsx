@@ -34,6 +34,7 @@ function Header() {
           onClick={() => {
             setActiveSection(link.name);
             setTimeOfLastClick(Date.now());
+            setIsShowing(false);
           }}
           className={activeSection === link.name ? "active" : ""}
         >
