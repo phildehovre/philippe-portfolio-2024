@@ -99,21 +99,27 @@ export const skills = [
 ]
 
 export const skillsObject: Skill[] = [
+  // {
+  //   "label": "javascript",
+  //   "name": "Javascript ES6",
+  //   "category": "Programming Languages",
+  //   "color": "red"
+  // },
   {
-    "label": "javascript",
-    "name": "Javascript ES6",
+    "label": "typecript",
+    "name": "Typescript",
+    "category": "Programming Languages",
+    "color": "red"
+  },
+  {
+    "label": "python",
+    "name": "Python 3",
     "category": "Programming Languages",
     "color": "red"
   },
   {
     "label": "html",
     "name": "HTML",
-    "category": "Programming Languages",
-    "color": "red"
-  },
-  {
-    "label": "typecript",
-    "name": "Typescript",
     "category": "Programming Languages",
     "color": "red"
   },
@@ -154,6 +160,18 @@ export const skillsObject: Skill[] = [
     "color": "cyan"
   },
   {
+    "label": "aws",
+    "name": "AWS",
+    "category": "Third-party Services",
+    "color": "yellow"
+  },
+  {
+    "label": "django",
+    "name": "Django",
+    "category": "Full-stack Frameworks",
+    "color": "lavender"
+  },
+  {
     "label": "apis",
     "name": "RESTful APIs",
     "category": "APIs & Services",
@@ -189,12 +207,19 @@ export const skillsObject: Skill[] = [
     "category": "Development Tools",
     "color": "dodgerBlue"
   },
-  {
-    "label": "baas",
-    "name": "BaaS (Firebase, Supabase)",
-    "category": "Backend as a Service",
+{
+    "label": "sql",
+    "name": "SQL",
+    "category": "Database query language",
     "color": "violet"
-  },
+
+},
+{
+    "label": "postgres",
+    "name": "PostgreSQL",
+    "category": "Database query language",
+    "color": "violet"
+},
   {
     "label": "firebase",
     "name": "Firebase",
@@ -211,7 +236,7 @@ export const skillsObject: Skill[] = [
     "label": "chartjs",
     "name": "Chart.js",
     "category": "Data Visualization",
-    "color": "violet"
+    "color": "purple"
   },
   {
     "label": "libraries",

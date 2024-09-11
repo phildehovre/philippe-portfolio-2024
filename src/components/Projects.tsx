@@ -33,7 +33,6 @@ function Projects() {
       // add a media query. When it matches, the associated function will run
       mm.add("(min-width: 600px)", () => {
         // this setup code only runs when viewport is at least 600px wide
-        console.log("desktop");
 
         ScrollTrigger.create({
           trigger: ".gallery",
@@ -76,7 +75,6 @@ function Projects() {
     return details.map((detail) => {
       return (
         <React.Fragment key={detail.name}>
-          {/* {index === Math.round(details.length / 2) && <div ref={ref}></div>} */}
           <div className="desktopContentSection" key={detail.name}>
             <h1>{detail.name}</h1>
             <p>{detail.description}</p>

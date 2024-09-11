@@ -1,6 +1,24 @@
 import { SkillLabel } from "./types";
 
 export const details: {stack: SkillLabel[],  name: string, img: string, color: string, description: string, url: string, github: string}[] = [
+  // {
+  //   name: "E-Commerce project",
+  //   stack: [
+  //     "django",
+  //     "python",
+  //     "figma",
+  //     "uiux",
+  //     "libraries",
+  //     "aws",
+
+  //   ],
+  //   img: "https://res.cloudinary.com/dtnif6mzm/image/upload/v1726067396/Portfolio%20-%202024/342383782-ffa4d933-f67d-4cba-bf45-c21eafd65721_wqsubm.png",
+  //   color: "red",
+  //   description:
+  //     "This is an online shop built with Django, allowing users to browse products, add items to their cart, and complete purchases. It has a limited admin functionality that allows certain users to add and or edit products.",
+  //   url: "https://metronomeapp.vercel.app/",
+  //   github: "https://github.com/phildehovre/ci-django-shop/blob/main/README.md",
+  // },
   {
     name: "Metronome",
     stack: [

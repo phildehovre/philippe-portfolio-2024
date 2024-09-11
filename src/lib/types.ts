@@ -38,7 +38,7 @@ export const links = [
   
   }
 
-  export type SkillLabel = "libraries" |"reactQuery" | "html" | "chartjs" |"javascript" | "typecript" | "css" | "sass" | "tailwind" | "git" | "react" | "nextjs" | "apis" | "illustrator" | "figma" | "uiux" | "npm" | "gsap" | "baas" | "firebase" | "supabase";
+  export type SkillLabel = "libraries" |"reactQuery" | "html" | "chartjs" |"javascript" | "typecript" | "css" | "sass" | "tailwind" | "git" | "react" | "nextjs" | "apis" | "illustrator" | "figma" | "uiux" | "npm" | "gsap" | "baas" | "firebase" | "supabase"| "django" |"python" | "permissions" | "postgres" | "sql" | "aws";
 
   export interface Skill {
     label: SkillLabel;
