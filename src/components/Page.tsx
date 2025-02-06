@@ -11,7 +11,6 @@ function Page() {
       <Hero />
       <Skills />
       <Projects />
-      {/* <Experience /> */}
       <About />
       <Contact />
     </main>

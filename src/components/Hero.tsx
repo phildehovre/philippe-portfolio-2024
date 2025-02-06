@@ -82,9 +82,9 @@ function Hero() {
       </div>
       <h1 className="my-name-is">I am Philippe</h1>
       <div className="description">
-        I'm a <b>Front-end Developer</b> with <b>4 years</b> of experience. I
-        focus on <b>React</b> (Next.js). I am also passionate about <b>UI/UX</b>{" "}
-        and elegant designs.
+        I'm a <b>Full-Stack web Developer</b> with <b>4 years</b> of experience.
+        I focus on <b>Node.js and React</b>. I am also passionate about{" "}
+        <b>UI/UX</b> and elegant, pixel-perfect designs.
         <div className="hero-cta-ctn">
           <a
             className="hero-cta cv"

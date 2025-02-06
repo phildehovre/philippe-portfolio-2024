@@ -154,9 +154,21 @@ export const skillsObject: Skill[] = [
     "color": "cyan"
   },
   {
+    "label": "nodejs",
+    "name": "Node.js",
+    "category": "runtime",
+    "color": "cyan"
+  },
+  {
+    "label": "express",
+    "name": "Express",
+    "category": "Backend Framework",
+    "color": "cyan"
+  },
+  {
     "label": "nextjs",
     "name": "Next.js",
-    "category": "Front-end Frameworks",
+    "category": "Full-stack Frameworks",
     "color": "cyan"
   },
   {
