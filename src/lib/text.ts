@@ -216,8 +216,8 @@ export const skillsObject: Skill[] = [
   {
     "label": "gsap",
     "name": "GSAP",
-    "category": "Development Tools",
-    "color": "dodgerBlue"
+    "category": "Third-party libraries",
+    "color": "purple"
   },
 {
     "label": "sql",
